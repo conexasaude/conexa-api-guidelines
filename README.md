@@ -7,7 +7,7 @@
 4. [Operações sobre recursos](#operações-sobre-recursos)
 5. [Códigos de retorno](#códigos-de-retorno)
 6. [Regras para consumidores](#regras-para-consumidores)
-7. [Headers de requisição padrões](#Headers-de-requisição-padrões)
+7. [Headers de requisição padrões](#headers-de-requisição-padrões)
 8. [Headers customizados padrões](#Headers-customizados-padrões)
 9. [Operações sobre recurso em mais detalhes](#Operações-sobre-recurso-em-mais-detalhes)
 10. [Busca por um recurso usando o Id do recurso](#Busca-por-um-recurso-usando-o-Id-do-recurso)
