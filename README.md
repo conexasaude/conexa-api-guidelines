@@ -34,7 +34,7 @@ Todas as APIs tanto internas quanto externas devem seguir este guia para obtermo
 
 ## Design voltado a recursos
 
-As APIs devem ser voltadas para recursos. Um recurso pode ser entendido com uma entidade dentro do domínio ou uma capacidade do seu negócio como “Comunicação”, “Autenticação”, “Auditoria”, etc etc.
+As APIs devem ser voltadas para recursos. Um recurso pode ser entendido com uma entidade dentro do domínio ou uma capacidade do seu negócio como "Comunicação", "Autenticação", "Auditoria", etc etc.
 
 ## Subrecurso
 
@@ -44,7 +44,7 @@ A estutura da url para acessar um subrecurso é `https://patient-v1.conexasaude.
 
 ## Nomenclatura 
 
-Os nomes dos recursos devem ser em inglês americano. Devem ser minúsculas e no singular. Nomes compostos devem ser separados por “_”. O recursos geralmente são nomeados usando um substantivo
+Os nomes dos recursos devem ser em inglês americano. Devem ser minúsculas e no singular. Nomes compostos devem ser separados por "_". O recursos geralmente são nomeados usando um substantivo
 
 As urls devem conter a versão do recurso
 As urls devem conter o nome do recurso no singular. 
@@ -54,7 +54,7 @@ Urls não devem conter verbos, exceto para descrever operações que não consig
 
 Exemplo recurso patient: `https://patient-v1.conexasaude.com.br/patient`
 
-Os nomes dos campos devem ser em inglês americano. Devem ser minúsculas e no singular. Nomes compostos devem ser separados por “_”. Não devem conter espaços e nem acentos.
+Os nomes dos campos devem ser em inglês americano. Devem ser minúsculas e no singular. Nomes compostos devem ser separados por "_". Não devem conter espaços e nem acentos.
 
 Campos do tipo lista devem estar no plural. Não usar o tipo do campo no nome. Exemplo: não usar patientList, melhor usar patients
 
@@ -62,7 +62,7 @@ Evitar criar objetos com um campo só. Verifique a possibilidade de trabalhar co
 
 Campos do tipo data devem seguir o padrão **dd/MM/yyyy HH:mm:ss**
 
-Evitar usar os artigos em inglês “a”, “the”, “of”. Exemplo: não usar “countOfPatient”, usar “patientCount”
+Evitar usar os artigos em inglês "a", "the", "of". Exemplo: não usar "countOfPatient", usar "patientCount"
 
 ## Operações sobre recursos
 
@@ -128,7 +128,7 @@ Consumidores devem incluir os header padrões **Content-Type**, **Accept-Charset
 
 ## Headers customizados padrões
 
-Os headers customizados devem começar com o prefix “x-”
+Os headers customizados devem começar com o prefix "x-"
 
 Header x-applicationName
 
@@ -152,17 +152,17 @@ Para os exemplos abaixo vamos usar uma API fictícia chamada patient. A v1 da AP
 
 ```json
 {
-   “id”: 123,
-   “name”: “Diego Sena”,
-  “age”: 12,
-  “cpf”: “12345678910”,
-  “email”: “diego@teste.com”,
-  “cellphone”: “21123456789”,
-  “address”: {
-    “street”: “Rua xyz”,
-    “number”: “12323”,
-    “city”: “RIo de Janeiro”,
-  }
+    "id": 123,
+    "name": "Diego Sena",
+    "age": 12,
+    "cpf": "12345678910",
+    "email": "diego@teste.com",
+    "cellphone": "21123456789",
+    "address": {
+        "street": "Rua xyz",
+        "number": "12323",
+        "city": "RIo de Janeiro",
+    }
 }
 
 ```
@@ -185,35 +185,35 @@ Essa url deve retornar uma lista com todos os recursos encontrados dados os crit
 
 ```json
 {
-    “data”: [
+    "data": [
         {
-            “id”: 123,
-            “name”: “Diego Sena”,
-            “age”: 12,
-            “cpf”: “12345678910”,
-            “email”: “diego@teste.com”,
-            “cellphone”: “21123456789”,
-            “address”: {
-                “street”: “Rua xyz”,
-                “number”: “12323”,
-                “city”: “RIo de Janeiro”,
+            "id": 123,
+            "name": "Diego Sena",
+            "age": 12,
+            "cpf": "12345678910",
+            "email": "diego@teste.com",
+            "cellphone": "21123456789",
+            "address": {
+                "street": "Rua xyz",
+                "number": "12323",
+                "city": "RIo de Janeiro",
             }
         },
         {
-            “id”: 456,
-            “name”: “Alice Sena”,
-            “age”: 21,
-            “cpf”: “09876543212”,
-            “email”: “alice@teste.com”,
-            “cellphone”: “21123456789”,
-            “address”: {
-                “street”: “Rua xyz”,
-                “number”: “12323”,
-                “city”: “RIo de Janeiro”,
+            "id": 456,
+            "name": "Alice Sena",
+            "age": 21,
+            "cpf": "09876543212",
+            "email": "alice@teste.com",
+            "cellphone": "21123456789",
+            "address": {
+                "street": "Rua xyz",
+                "number": "12323",
+                "city": "RIo de Janeiro",
             }
         }
     ],
-    “_meta”: {
+    "_meta": {
         "pagination": {
             "limit": 10,
             "offset": 0,
@@ -238,16 +238,16 @@ No exemplo acima, `https://patient-v1.conexasaude.com.br/patient`
 
 ```json
 {
-    “id”: 123,
-    “name”: “Diego Sena”,
-    “age”: 12,
-    “cpf”: “12345678910”,
-    “email”: “diego@teste.com”,
-    “cellphone”: “21123456789”,
-    “address”: {
-        “street”: “Rua xyz”,
-        “number”: “12323”,
-        “city”: “RIo de Janeiro”,
+    "id": 123,
+    "name": "Diego Sena",
+    "age": 12,
+    "cpf": "12345678910",
+    "email": "diego@teste.com",
+    "cellphone": "21123456789",
+    "address": {
+        "street": "Rua xyz",
+        "number": "12323",
+        "city": "RIo de Janeiro",
     }
 }
 ```
@@ -259,11 +259,11 @@ No exemplo acima, `https://patient-v1.conexasaude.com.br/patient`
 
 ```json
 {
-    “id”: 123,
-    “name”: “Diego Sena”,
-    “cpf”: “12345678910”,
-    “email”: “diego@teste.com”,
-    “cellphone”: “21123456789”
+    "id": 123,
+    "name": "Diego Sena",
+    "cpf": "12345678910",
+    "email": "diego@teste.com",
+    "cellphone": "21123456789"
 }
 
 ```
@@ -280,16 +280,16 @@ O corpo da requisição deve conter os campos necessários para a criação do r
 
 ```json
 {
-    “id”: 4452,
-    “name”: “Denize Sena”,
-    “age”: 12,
-    “cpf”: “12345678910”,
-    “email”: “diego@teste.com”,
-    “cellphone”: “21123456789”,
-    “address”: {
-        “street”: “Rua xyz”,
-        “number”: “12323”,
-        “city”: “RIo de Janeiro”,
+    "id": 4452,
+    "name": "Denize Sena",
+    "age": 12,
+    "cpf": "12345678910",
+    "email": "diego@teste.com",
+    "cellphone": "21123456789",
+    "address": {
+        "street": "Rua xyz",
+        "number": "12323",
+        "city": "RIo de Janeiro",
     }
 }
 
@@ -299,9 +299,9 @@ Se o recurso foi criado, deve-se retornar status code 201 com a url para o recur
 
 ```json
 {
-    _link: {
-        “id”: 2344,
-        “href”: “https://patient-v1.conexasaude.com.br/patient/2344”
+    "_link": {
+        "id": 2344,
+        "href": "https://patient-v1.conexasaude.com.br/patient/2344"
     }
 }
 
@@ -330,16 +330,16 @@ Retorno normal sem o parâmetro fields
 
 ```json
 {
-    “id”: 4452,
-    “name”: “Denize Sena”,
-    “age”: 12,
-    “cpf”: “12345678910”,
-    “email”: “diego@teste.com”,
-    “cellphone”: “21123456789”,
-    “address”: {
-        “street”: “Rua xyz”,
-        “number”: “12323”,
-        “city”: “RIo de Janeiro”,
+    "id": 4452,
+    "name": "Denize Sena",
+    "age": 12,
+    "cpf": "12345678910",
+    "email": "diego@teste.com",
+    "cellphone": "21123456789",
+    "address": {
+        "street": "Rua xyz",
+        "number": "12323",
+        "city": "RIo de Janeiro",
     }
 }
 
@@ -350,9 +350,9 @@ Retorno exibindo só o id, cpf e nome
 `https://patient-v1.conexasaude.com.br/patient?fields=name,cpf`
 ```json
 {
-   “id”: 4452,
-   “name”: “Denize Sena”,
-  “cpf”: “12345678910”
+    "id": 4452,
+    "name": "Denize Sena",
+    "cpf": "12345678910"
 }
 ```
 
@@ -360,7 +360,7 @@ Para desenvolvedores backend, deve-se evitar criar uma entidade para cada possí
 
 ## Busca por range
 
-Não há um padrão consolidado nesse caso porém em muitas empresas usa-se o prefixo “from” e “to” antes dos nomes dos campos.
+Não há um padrão consolidado nesse caso porém em muitas empresas usa-se o prefixo "from" e "to" antes dos nomes dos campos.
 
 Exemplo: Buscar todos os pacientes entre 10 e 20 anos.
 
