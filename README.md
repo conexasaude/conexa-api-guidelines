@@ -4,7 +4,7 @@
 1. [Design voltado a recursos](#design-voltado-a-recursos)
 2. [Subrecurso](#subrecurso)
 3. [Nomenclatura](#nomenclatura)
-4. [Operações sobre recursos](#Operações-sobre-recursos)
+4. [Operações sobre recursos](#Operacoes-sobre-recursos)
 5. [Códigos de retorno](#códigos-de-retorno)
 6. [Regras para consumidores](#regras-para-consumidores)
 7. [Headers de requisição padrões](#Headers-de-requisição-padrões)
