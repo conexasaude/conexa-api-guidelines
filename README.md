@@ -1,11 +1,25 @@
 # conexa-api-guidelines
 
 ## Índices
-    1. [Design voltado a recursos](#design-voltado-a-recursos)
-    2. [Subrecurso](#subrecurso)
-    3. [Nomenclatura](#nomenclatura)
-    4. [Operações sobre recursos](#operacões-sobre-recursos)
-    5. [Códigos de retorno](#códigos-de-retorno)
+1. [Design voltado a recursos](#design-voltado-a-recursos)
+2. [Subrecurso](#subrecurso)
+3. [Nomenclatura](#nomenclatura)
+4. [Operações sobre recursos](#operacões-sobre-recursos)
+5. [Códigos de retorno](#códigos-de-retorno)
+6. [Regras para consumidores](#regras-para-consumidores)
+7. [Headers de requisição padrões](#Headers-de-requisição-padrões)
+8. [Headers customizados padrões](#Headers-customizados-padrões)
+9. [Operações sobre recurso em mais detalhes](#Operações-sobre-recurso-em-mais-detalhes)
+10. [Busca por um recurso usando o Id do recurso](#Busca-por-um-recurso-usando-o-Id-do-recurso)
+11. [Busca por uma coleção](#Busca-por-uma-coleção)
+12. [Deleção de um recurso](#Deleção-de-um-recurso)
+13. [Atualização Total de um recurso](#Atualização-Total-de-um-recurso)
+14. [Atualização Parcial de uma recurso](#Atualização-Parcial-de-uma-recurso)
+15. [Criação de um recurso](#Criação-de-um-recurso)
+16. [Paginação](#Paginação)
+17. [Ordenação](#Ordenação)
+18. [Controlar quantidade de campos retornados na resposta](#Controlar-quantidade-de-campos-retornados-na-resposta)
+19. [Busca por range](#Busca-por-range)
 
 
 ## Objetivo deste guia
