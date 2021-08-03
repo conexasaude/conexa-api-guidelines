@@ -60,7 +60,7 @@ Campos do tipo lista devem estar no plural. Não usar o tipo do campo no nome. E
 
 Evitar criar objetos com um campo só. Verifique a possibilidade de trabalhar com um campo simples.
 
-Campos do tipo data devem seguir o padrão **dd/MM/yyyy HH:mm:ss**
+Campos do tipo data devem seguir o padrão **yyyy-MM-dd HH:mm:ss**
 
 Evitar usar os artigos em inglês "a", "the", "of". Exemplo: não usar "countOfPatient", usar "patientCount"
 
